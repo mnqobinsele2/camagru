@@ -1,0 +1,572 @@
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(141, 182, 230);
+}
+
+
+/* GLOBAL */
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+#gallery {
+    text-align: center;
+    min-height: 400px;
+}
+
+#pagination {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+}
+.alert {
+    color: rgb(200, 109, 200);
+    background-color: rgb(141, 182, 230);
+    width: 400px;
+    padding: 10px 0px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container_1 {
+    width: 99%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.gallImage{
+    display: inline-block;
+    margin: 5px 5px 0px 5px;
+    min-width: 250px;
+    max-width: 400px;
+}
+
+.gallImage img{
+    width: 100%;
+}
+
+.gallImage div{
+    color: white;
+    float: left;
+    width: 47%;
+    margin: 0px 5px;
+    padding: 10px 0px; 
+    background-color: rgba(4, 152, 197, 0.877);
+}
+
+/* HEADER */
+
+header {
+    color:rgb(141, 182, 230);
+    background: steelblue;
+    min-height: 70px;
+    padding-top: 30px;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header a:hover {
+    color: steelblue;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+
+/* BANNER */
+
+#banner {
+    color:#666;
+    min-height: 350px;
+    background:rgb(141, 182, 230):
+    background-position: center;
+    background-size: cover; 
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+#banner h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#banner p {
+    color: rgb(141, 182, 230);
+    font-size: 20px;
+}
+
+
+/* LOGIN FORMS */
+
+#l_btn_0 {
+    float: left;
+}
+
+#l_btn_1 {
+    float: right;
+}
+
+.l_btn_0 {
+    color: rgb(141, 182, 230);
+    cursor: pointer;
+    width: 49%;
+    height: 45px;
+    line-height: 45px;
+    background-color:steelblue;
+    margin-bottom: 10px;
+}
+
+.l_btn_0:hover {
+    background-color: steelblue;
+}
+
+.l_btn_1 {
+    color: #c2c2c2;
+    cursor: pointer;
+    width: 49%;
+    height: 45px;
+    line-height: 45px;
+    background-color:steelblue;
+    margin-bottom: 10px;
+}
+
+.l_btn_1:hover {
+    background-color: steelblue;
+}
+
+.form_container {
+    padding: 70px 0px;
+    text-align: center;
+    background-color: rgba(4, 152, 197, 0.877);
+    margin: 0;
+}
+
+.form_container a {
+    color: #ffffff;
+    text-decoration: skyblue;
+    font-size: 16px;
+}
+
+.form_container a:hover {
+    color:rgb(141, 182, 230);
+}
+
+.form_container form input {
+    outline: none;
+    text-align: center;
+    width: 400px;
+    border: 0;
+    height: 45px;
+    font-size: 18px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.form_container .radio {
+    width: 400px;
+    height: 45px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 45px;
+    background-color: #f4f4f4;
+}
+
+.form_container .radio input{
+    width: 20px;
+    height: 20px;
+}
+
+.btn_0 {
+    outline: none;
+    color: #ffffff;
+    border: 0;
+    min-width: 60px;
+    height: 45px;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: steelblue;
+}
+
+.btn_0:hover {
+    cursor: pointer;
+    background-color: steelblue;
+}
+
+.btn_1 {
+    outline: none;
+    color: #ffffff;
+    border: 0;
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: steelblue;
+    border-radius: 0;
+}
+
+.btn_1:hover {
+    cursor: pointer;
+    background-color:steelblue;
+}
+
+.login_switches {
+    width: 400px;
+    margin: auto;
+}
+
+
+/* MAIN */
+
+#main {
+    float: left;
+    width: 55%;
+}
+
+
+/* Cam and Frame*/
+
+#main_sec {
+    max-width: 100%;
+    position: relative;
+    margin: 10px;
+    z-index: 0;
+}
+
+#frame {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+}
+
+#capture {
+    visibility: hidden;
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-color: rgb(141, 182, 230);
+    border: 0;
+}
+
+#newPic {
+    visibility: hidden;
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    outline: none;
+    background-color: rgb(141, 182, 230);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    border: 0;
+}
+
+#capture img {
+    width: 100%;
+    height: 100%;
+}
+
+#newPic img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Superposables*/
+
+#sp_img {
+    display: inline-flex;
+    width: 100px;
+    height: 80px;
+    background-color: #ddd;
+    padding: 5px;
+    margin: 5px;
+}
+
+#sp_img img {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#sp_img:hover {
+    background-color: #666;
+}
+
+.superposables {
+    text-align: center;
+    overflow-x: auto;
+}
+
+
+/* SIDEBAR */
+
+#sidebar {
+    width: 45%;
+    float: right;
+}
+
+#sidebar h3 {
+    color: #ffffff;
+    background-color: steelblue;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+#sidebar #side_sec {
+    text-align: center;
+}
+
+.pic_thumb {
+    display: inline-block;
+    min-width: 100px;
+    min-height: 80px;
+    max-width: 200px;
+    margin: 0px 5px 5px;
+}
+
+.pic_thumb img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.pic_thumb img:hover {
+    opacity: 0.7;
+}
+
+
+/* Canvas */
+
+#canvas {
+    display: none;
+}
+
+
+/* COMMENTS */
+
+.button {
+    border: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.input {
+    text-align: center;
+    padding: 10px 0px;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.cont-70 {
+    margin: 0px auto;
+    width: 40%;
+}
+
+.closeBtn {
+    color: #888;
+    float: right;
+    font-size: 30px;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+    cursor: pointer;
+    color: #333;
+}
+
+.comment {
+    padding: 10px;
+}
+
+.comment span {
+    float: right;
+}
+
+.comment h4 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.comment h4::first-letter {
+    text-transform: capitalize;
+}
+
+.modal {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    z-index: 1;
+    background-color: rgba(4, 152, 197, 0.877);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 20% auto;
+    padding: 5px 20px 20px 20px;
+    width: 70%;
+    min-height: 200px;
+    box-shadow: 5px 5px 5px rgba(4, 152, 197, 0.877);
+}
+
+.modal textarea {
+    width: 96%;
+    height: 80px;
+    padding: 5px;
+    margin: 0px auto;
+    resize: none;
+}
+
+.modal button {
+    width: 200px;
+    height: 30px;
+    background-color:steelblue;
+    border: 0;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.modal button:hover {
+    background-color:#ffffff;
+}
+
+.modal input {
+    margin-bottom: 3px;
+    padding: 5px;
+}
+
+
+/* FOOTER */
+
+footer {
+    color: lightgoldenrodyellow;
+    text-align: center;
+    padding: 20px;
+    background:steelblue;
+}
+
+
+/* MEDIA QUERIES */
+
+@media(max-width: 1020px) {
+    .pic_thumb {
+        max-width: 45%;
+    }
+}
+
+@media(max-width: 768px) {
+    /* Header */
+    header #branding,
+    header nav,
+    header nav li,
+    #main,
+    #sidebar {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    header {
+        padding-bottom: 20px;
+    }
+    /* Banner */
+    #banner {
+        min-height: 250px;
+        padding-bottom: 30px;
+    }
+    #banner h1 {
+        margin-top: 40px;
+        font-size: 35px;
+    }
+    #sp_img {
+        width: 70px;
+        height: 50px;
+    }
+}
+
+@media(max-width: 430px) {
+    form_container form {
+        width: 95%;
+        margin: auto;
+    }
+    .form_container form input {
+        width: 90%;
+    }
+    .login_switches {
+        width: 95%;
+        margin: auto;
+    }
+}
+@media(max-width: 360px) {
+    .gallImage div {
+        width: 100%;
+        margin: 0;
+    }
+}
+@media(max-width: 330px) {
+    #banner h1 {
+        margin-top: 40px;
+        font-size: 25px;
+    }
+}
